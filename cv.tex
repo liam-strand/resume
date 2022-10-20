@@ -136,26 +136,18 @@
 \section{Work Experience}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Fowler Family Summer Scholar, Tufts University Department of Computer Science} & \hfill Summer 2022 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Accepted position on an exclusive summer research program to improve the usability and design of the MEDFORD Metadata Markup Language. Worked with a multi-institutional team to develop new langage features and support infrastructure. Although the primary focus was the MEDFORD Language Server (see below), attention was given to assessing beta user feedback, formalizing language grammar, and SWE best practices for collaboative development, testing, and maintinence.} \\
+    \textbf{Fowler Family Summer Scholar and Project Lead, Tufts University Computer Science} & \hfill Summer 2022 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Leveraged exclusive summer research program to improve MEDFORD Metadata Markup Language. As Project Lead, led a multi-institutional team to develop and deliver new language features, including dynamic syntax validation, contextual color highlighting, and intelligent auto-completion. The implementation is highly extensible, using a client/server model to easily support new language features and editors. Project included incorporating beta tester feedback, automated regression testing, and a well-documented API for reporting diagnostics.} \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Teaching Assistant, Tufts University Department of Computer Science} & \hfill Fall 2021 - Present \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Work with students and faculty to facilitate a supported, yet rigorous introduction to computer science. Responsibilities include: developing course infrastructure, assisting in course planning and scheduling, designing and teaching labs, planning and running review sessions, and hosting one-on-one and group office hours.} \\
+    \textbf{Teaching Assistant, CS 11, Tufts University Computer Science} & \hfill Fall 2021 - Present \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Responsibilities include: collaborating with students and faculty to develop course infrastructure and assessment materials, designing and teaching labs, designing and leading review sessions, grading, and office hours. } \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Data Collection/Analysis, Madaket Marine} & \hfill Summer/Winter 2018 - 2021 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{
-        \begin{minipage}[t]{\linewidth}
-            \begin{itemize}[nosep,after=\strut, leftmargin=1em]
-                \item[--] \textbf{Yamaha Engine Data Collection and Analysis}: Designed and implemented outboard engine data collection methodology. Gathered, analyzed, and synthesized data for 18 engine models. Created accessible diagnostic charts for technicians.
-                \item[--] \textbf{Garmin GPS Data}: Recovered and translated GPS data from older chart-plotters. Transferred data (locations, routes, waypoints) to new devices. Created user guide to allow employees to replicate my work, facilitating new electronics sales.
-                \item[--] \textbf{Backup Network and Ransomeware Patch}: Set up Point-Of-Sale system backup network to allow business to operate when historically unreliable primary internet service fails. Patched diverse company computers against ransomware virus.
-            \end{itemize}
-        \end{minipage}
-    }
+    \multicolumn{2}{@{}X@{}}{Designed and implemented Yamaha outboard engine data collection methodology. Gathered, analyzed, and synthesized data for 18 engine models. Created accessible diagnostic charts for technicians. Recovered and transferred GPS data from legacy chart-plotters to new devices and created user guide to allow replication of my work. Patched company computers against malware and set up redundant Point-Of-Sale network to maintain business operations when primary ISP fails.}
 \end{tabularx}
 
 % \begin{minipage}[t]{\linewidth}
@@ -172,28 +164,44 @@
 % PROJECTS
 %-------------------------------------------------------------------------------
 
-\section{Key Projects}
+\section{Personal Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\href{https://github.com/liam-strand/medford-vscode}{\textbf{MEDFORD Language Server}} & \hfill \href{https://youtu.be/SQxVEESBQ24}{Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Designed, implemented, and maintained a high-performance, reactive language server, using Microsoft’s Language Server Protocol (LSP) for the new MEDFORD Metadata Markup Language. Features include dynamic syntax validation, contextual color highlighting, and intelligent auto-completion. The Language Server is implemented using a client/server model, making it easy to add support for additional text editors and language features. A high-quality well-documented parser API was created to report diagnostics.}  \\[3.75pt]\\
-\href{https://github.com/bstrand42/Log-Your-Catch}{\textbf{Log-Your-Catch}} & \hfill \href{}{No Demo Yet} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Designed and developed an iOS app to support marine fishery data collection, including architecture design, UI design, system integration, persistant storage, remote authentication, remote database management, location services, and private beta testing.}  \\[3.75pt]\\
-\href{https://github.com/liam-strand/HalliganHelper2}{\textbf{HalliganHelper2}} & \hfill \href{}{No Demo Yet} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{Developed CLI to manage FIFO queue of students requesting TA assistance. Implemented using shared files and file locks to prevent change conflicts. CLI automatically enables relevant commands for appropriate users while blocking others.} \\[3.75pt]
+    \href{}{\textbf{Visualization Portal}} & \hfill Present \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Team-built nonprofit data input and visualization portal using React, Next.js, MongoDB, and Express.js.}  \\[3.75pt]
+\end{tabularx}
 
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \href{}{\textbf{Concurrent Traffic Simulation}} & \hfill 2022 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Developed traffic simulation using CSP in Erlang with Python visualization, communicating over serialized I/O.}  \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \href{}{\textbf{VM Profiling}} & \hfill 2022 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Built a simulated architecture emulator, and then vastly improved performance using profiling techniques.} \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Python CLI Concurrent Queue Manager:} \href{}{\textbf{HalliganHelper2}} & \hfill 2021 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Developed CLI to manage FIFO queue (students requesting TA assistance.) Used shared files and file locks to prevent change conflicts. CLI automatically invokes relevant commands and imposes serialization.
+    } \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{iOS Data Scraping App:} \href{}{\textbf{IFR Plate Scrape}} & \hfill 2021 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Built airport mapping app in Python using HTTP requests to retrieve FAA data, and BeautifulSoup to extract and present relevant information to user. Ported to iOS using Swift, leveraging built-in URL management and SwiftSoup.} \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{iOS Data Logging App:} \href{}{\textbf{Log Your Catch}} & \hfill 2020 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Built iOS app to capture and record data to support fishery management using Apple Location Services and Google Firebase database services. Completed architecture design, UI design, system integration, authentication, and beta testing.} \\[3.75pt]
 \end{tabularx}
 
 %-------------------------------------------------------------------------------
-
-\section{Other Projects}
-
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-\href{https://github.com/liam-strand/cs-21-final-project}{\textbf{on-the-road-again}} & Concurrent traffic simulation in Erlang with Python visualization, communicating over serialized I/O. \\[3.75pt]
-\href{}{\textbf{Culture House}} & Team-built nonprofit data input and visualization portal using React, Next.js, and Express.js. \\[3.75pt]
-\href{https://github.com/liam-strand/hw6-um}{\textbf{VM}} \href{https://github.com/liam-strand/hw7-profiling}{\textbf{Profiling}} & Built a fictional architecture emulator, then vastly improved performance using profiling techniques. \\[3.75pt]
-\href{}{\textbf{MetroSim}} & Highly flexible public transportation simulation using bespoke ADT implementations. \\[3.75pt]
-\end{tabularx}
+%	SKILLS
+%-------------------------------------------------------------------------------
+\section{Skills}
+\normalsize{C, C++, Erlang, git, Java, JavaScript, LaTeX, Microsoft LSP, Node.js, Python, React, Rust, Swift, Unix, Xcode}
 
 %-------------------------------------------------------------------------------
 %	EDUCATION
@@ -202,7 +210,9 @@
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
 2020 - Present & BS in Computer Science, \textbf{Tufts University School of Engineering} \hfill \normalsize (GPA: 3.95/4.00) \\
     & \footnotesize{Data Structures/Algorithms, Machine Structure and Assembly Language Programming,} \\
-    & \footnotesize{Computational Theory, Security, Software Engineering, and Concurrent Programming}
+    & \footnotesize{Computational Theory, Security, Software Engineering, and Concurrent Programming} \\[3.75pt]
+Summer/Fall 2020 & Swift 2, iOS development bootcamp, Udemy London App Brewery \\[3.75pt]
+Summer 2019 & Python Scripting, Rice University/Coursera	
 \end{tabularx}
 
 %-------------------------------------------------------------------------------
@@ -214,16 +224,8 @@
 % \printbibliography[heading=none]
 % \end{refsection}
 
-%-------------------------------------------------------------------------------
-%	SKILLS
-%-------------------------------------------------------------------------------
-% \section{Skills}
-% \begin{tabularx}{\linewidth}{@{}l X@{}}
-% Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-% Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
-% \end{tabularx}
 
-\vfill
-\center{\footnotesize Last updated: \today}
+% \vfill
+% \center{\footnotesize Last updated: \today}
 
 \end{document}
