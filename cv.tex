@@ -1,24 +1,3 @@
-%------------------------------------------------------------------------------%
-%	The MIT License (MIT)
-%
-%	Copyright (c) 2021 Jitin Nair
-%
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%	
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%------------------------------------------------------------------------------%
-
 %-------------------------------------------------------------------------------
 %	DOCUMENT DEFINITION
 %-------------------------------------------------------------------------------
@@ -52,7 +31,7 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.95]{geometry}
 
 %tabularx environment
 \usepackage{tabularx}
@@ -114,7 +93,7 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Liam Strand} \\[7.5pt]
+\huge{Liam Strand} \\[5pt]
 \href{https://github.com/liam-strand}{\raisebox{-0.05\height}\faGithub\ liam-strand} \ $|$ \ 
 \href{https://liam-strand.github.io}{\raisebox{-0.05\height}\faGlobe \ liam-strand.github.io} \ $|$ \ 
 \href{mailto:strandliam@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ strandliam@gmail.com} \ $|$ \ 
@@ -134,20 +113,24 @@
 %-------------------------------------------------------------------------------
 
 \section{Work Experience}
-
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Fowler Family Summer Scholar and Project Lead, Tufts University Computer Science} & \hfill Summer 2022 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Leveraged exclusive summer research program to improve MEDFORD Metadata Markup Language. As Project Lead, led a multi-institutional team to develop and deliver new language features, including dynamic syntax validation, contextual color highlighting, and intelligent auto-completion. The implementation is highly extensible, using a client/server model to easily support new language features and editors. Project included incorporating beta tester feedback, automated regression testing, and a well-documented API for reporting diagnostics. (\href{https://youtu.be/TFLdXxnaBlU}{Demo}) (\href{https://liam-strand.github.io/assets/docs/medford_poster.pdf}{Poster}) (\href{https://github.com/liam-strand/medford-language-server}{Code Repository})} \\
+    \textbf{Embedded Software Engineering Intern, AeroVironment Inc.} & \hfill Summer 2023 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{ Demonstrated that development and hardware costs of an aerial robotics product can be dramatically reduced by transitioning to COTS hardware. Created CI pipelines and containers for development using Docker and Gitlab. Led porting of multiple large C++ applications to new distributed hardware environment. Refactored network communication protocol to make architectural improvements and improve resiliency. Resolved complex Linux kernel driver compatibility issues. } \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Teaching Assistant, CS 11, Tufts University Computer Science} & \hfill Fall 2021 - Present \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Provide C++ instruction across many mediums: design and teach labs, facilitate student debugging, host office hours, lead review sessions, and collaborate with fellow TA’s and faculty to develop course infrastructure and assessment tools.} \\
+    \textbf{Fowler Family Summer Scholar and Project Lead, Tufts University Computer Science} & \hfill Summer 2022 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Led a multi-institutional team to deliver new features to the MEDFORD Language.  Features include: dynamic syntax validation, contextual color highlighting, and intelligent auto-completion, utilizing beta tester feedback and automated regression testing. Implementation uses a client/server model, with custom, well-documented API to easily support new language features and editors. Manuscript in Preparation: \textit{Context-Sensitive Editing for the MEDFORD Metadata Language} (\href{https://youtu.be/TFLdXxnaBlU}{Demo}) (\href{https://liam-strand.github.io/assets/docs/medford_poster.pdf}{Poster}) (\href{https://github.com/liam-strand/medford-language-server}{Code Repository})} \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Teaching Assistant (C, C++), Tufts University Computer Science} & \hfill Fall 2021 - Present \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Design and teach labs, teach debugging strategies and tools (gdb, valgrind). Lead review sessions. Collaborate with fellow TAs and faculty to develop course infrastructure, assessments, and assignments for machine structure and assembly programming courses.} \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Data Collection/Analysis, Madaket Marine} & \hfill Summer/Winter 2018 - 2021 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Designed and implemented Yamaha outboard engine data collection methodology. Gathered, analyzed, and synthesized data for 18 engine models. Created accessible diagnostic charts for technicians. Recovered and transferred GPS data from legacy chart-plotters to new devices and created user guide to allow replication of my work. Patched company computers against malware and set up redundant Point-Of-Sale network to maintain business operations when primary ISP fails.}
+    \multicolumn{2}{@{}X@{}}{Designed and implemented Yamaha outboard engine data collection methodology. Gathered, analyzed, synthesized data for 18 engine models. Created accessible diagnostic charts. Recovered and transferred GPS data. Created user guide to allow replication of work.}
 \end{tabularx}
 
 % \begin{minipage}[t]{\linewidth}
@@ -167,18 +150,23 @@
 \section{Personal Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \href{}{\textbf{Visualization Portal}} & \hfill Present \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Team-built nonprofit data input and visualization portal using React, Next.js, MongoDB, and Express.js.}  \\[3.75pt]
-\end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Concurrent Traffic Simulation:} \href{https://github.com/liam-strand/cs-21-final-project}{\textbf{on-the-road-again}} & \hfill 2022 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Developed traffic simulation using CSP in Erlang with Python visualization, communicating over serialized I/O. (\href{https://youtu.be/_JQW8edL14A}{Demo})}  \\[3.75pt]
+    \textbf{Rust Boggle Solver: \href{https://github.com/liam-strand/ruggle}{Ruggle}} & \hfill 2023 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Designed and built a highly optimized boggle solver in Rust utilizing a serializable prefix tree (trie) data structure to encode a lexicon, a pruning graph-traversal algorithm, and a custom visualization system to display words as they appear on the board.}  \\[3.75pt]
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Assembly Emulator:} \href{https://github.com/liam-strand/comp-40-VM-Profiling}{\textbf{VM Profiling}} & \hfill 2022 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Built a simulated architecture emulator in C, and then vastly improved performance using profiling techniques. (\href{https://youtu.be/OnzkSmFvxiM}{Demo})} \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Built a simulated architecture emulator in C, and vastly improved performance using modern profiling techniques. (\href{https://youtu.be/OnzkSmFvxiM}{Demo})} \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Concurrent Simulations:} \href{https://github.com/liam-strand/cs-21-final-project}{\textbf{on-the-road-again}} and \href{https://github.com/liam-strand/cs121-p5}{\textbf{MetroSim}} & \hfill 2022 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Developed traffic simulation using CSP in Erlang with Python visualization, communicating over serialized I/O. Developed a fully concurrent subway simulation in Java using communicating threads to represent trains, passengers, and stations. (\href{https://youtu.be/_JQW8edL14A}{Demo})}  \\[3.75pt]
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \href{https://github.com/liam-strand/cs121-p3}{\textbf{Java Testing Framework}} & \hfill 2022 \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{Designed testing infrastructure: unit testing library, test generation framework, fluent assertion domain-specific language, test runner.}  \\[3.75pt]
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
@@ -186,10 +174,10 @@
     \multicolumn{2}{@{}X@{}}{Developed CLI to manage FIFO queue of students requesting TA assistance in Python. Used shared files and file locks to prevent change conflicts. CLI automatically invokes relevant commands and imposes serialization. (\href{https://youtu.be/qPwZz3OVA7A}{Demo})} \\[3.75pt]
 \end{tabularx}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{iOS Data Scraping App:} \href{https://github.com/liam-strand/IFR-Plate-Scrape}{\textbf{IFR Plate Scrape}} & \hfill 2021 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Built airport mapping app in Python using HTTP requests to retrieve FAA data, and BeautifulSoup to extract and present relevant information to user. Ported to iOS using Swift, leveraging built-in URL management and SwiftSoup. (\href{https://youtu.be/bDe3dsVyUok}{Demo})} \\[3.75pt]
-\end{tabularx}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+%     \textbf{iOS Data Scraping App:} \href{https://github.com/liam-strand/IFR-Plate-Scrape}{\textbf{IFR Plate Scrape}} & \hfill 2021 \\[3.75pt]
+%     \multicolumn{2}{@{}X@{}}{Built airport mapping app in Python using HTTP requests to retrieve FAA data, and BeautifulSoup to extract and present relevant information to user. Ported to iOS using Swift, leveraging built-in URL management and SwiftSoup. (\href{https://youtu.be/bDe3dsVyUok}{Demo})} \\[3.75pt]
+% \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{iOS Data Logging App:} \href{https://github.com/bstrand42/Log-Your-Catch}{\textbf{Log Your Catch}} & \hfill 2020 \\[3.75pt]
@@ -200,18 +188,17 @@
 %	SKILLS
 %-------------------------------------------------------------------------------
 \section{Skills}
-\normalsize{C, C++, Erlang, git, Java, JavaScript, \LaTeX, Microsoft LSP, Node.js, Python, React, Rust, Swift, Unix, Xcode}
+\normalsize{Agile, Bash, C, C++, Concurrent/Parallel Programming, Docker, Erlang, \texttt{git}, GitHub, GitLab, Java, Jira, Linux/Unix, Profiling, Python, Rust, Swift, \texttt{gdb}, \LaTeX}
 
 %-------------------------------------------------------------------------------
 %	EDUCATION
 %-------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2020 - Present & BS in Computer Science, Tufts University School of Engineering \hfill \normalsize (GPA: 3.95/4.00) \\
-    & \footnotesize{Data Structures/Algorithms, Machine Structure and Assembly Language Programming, Software Engineering, Security,} \\
-    & \footnotesize{Computational Theory, and Concurrent Programming (Spring '23, Parallel Programming and Programming Languages)} \\[3.75pt]
-Summer/Fall 2020 & Swift 2, iOS development bootcamp, Udemy London App Brewery \\[3.75pt]
-Summer 2019 & Python Scripting, Rice University/Coursera	
+2020 - Present & BS in Computer Science, Tufts University School of Engineering (ABET) \hfill \normalsize GPA: 3.96/4.00 \\
+    & \footnotesize{Data Structures/Algorithms, Machine Structure and Assembly Language, Software Engineering, Security, Concurrent Programming, Parallel Computing, Computational Theory, Programming Languages (Fall 23: Machine Learning)} (Dean's List 6/6 semesters) \\[3.75pt]
+Summer/Fall 2020 & Swift 2, iOS development bootcamp, Udemy London App Brewery
+% Summer 2019 & Python Scripting, Rice University/Coursera	
 \end{tabularx}
 
 %-------------------------------------------------------------------------------
