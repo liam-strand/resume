@@ -31,13 +31,17 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.95]{geometry}
+\usepackage[scale=0.92]{geometry}
 
 %tabularx environment
 \usepackage{tabularx}
 
 %for lists within experience section
 \usepackage{enumitem}
+
+\newenvironment{mylist}[1][]
+    {\itemize[noitemsep, nolistsep]}
+    {\enditemize}
 
 % centered version of 'X' col. type
 \newcolumntype{C}{>{\centering\arraybackslash}X} 
@@ -61,7 +65,7 @@
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
 
-%Setup hyperref package, and colours for links
+%Setup hyperref package, and colors for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
@@ -107,30 +111,58 @@
 % \section{Interests}
 % This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
 
+%-------------------------------------------------------------------------------
+%	SKILLS
+%-------------------------------------------------------------------------------
+\section{Skills}
+\normalsize{C, C++, Concurrent/Parallel Programming, Debugging, Hardware Bringup, Profiling, Performance Analysis, Tuning, Linux/Unix, Testing Methodologies, Python, Rust, Java, Docker, \texttt{git}, GitHub, GitLab, Jira, Agile Development, \texttt{gdb}, Erlang, Swift, \LaTeX}
 
 %-------------------------------------------------------------------------------
 % EXPERIENCE
 %-------------------------------------------------------------------------------
 
-\section{Work Experience}
+\section{Experience}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Embedded Software Engineering Intern, AeroVironment, Inc.} & \hfill Summer 2023 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{ Demonstrated that development and hardware costs of an aerial robotics product can be dramatically reduced by transitioning to COTS hardware. Led new platform bringup. Created CI pipelines and containers for development using Docker and GitLab. Led porting of multiple large C++ applications to new distributed hardware environment. Refactored network communication protocol to make architectural improvements and to improve resiliency. Resolved complex Linux kernel driver compatibility issues. } \\
+    \textbf{Embedded Software Engineering Intern, AeroVironment, Inc.} & \hfill Summer 2023 \\
+    \multicolumn{2}{@{}X@{}}{\begin{mylist}
+        \item Demonstrated that costs of aerial robotics product can be dramatically reduced by transitioning to COTS hardware. 
+        \item Led hardware bringup and software integration effort
+        \item Created CI pipelines and containers for development using Docker and GitLab. 
+        \item Led porting of large C++ applications to new distributed hardware environment. 
+        \item Refactored network communication protocol to improve architecture and resiliency. 
+        \item Resolved complex Linux kernel driver compatibility issues.
+    \end{mylist}} \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Fowler Family Summer Scholar and Project Lead, Tufts University Computer Science} & \hfill Summer 2022 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Led multi-institutional team to deliver new features to the MEDFORD Language.  Features include: dynamic syntax validation, contextual color highlighting, and intelligent auto-completion. Utilized beta tester feedback and automated regression testing. Implementation uses a client/server model, with custom, well-documented API to easily support new language features and editors. Manuscript in Review: \textit{Context-Sensitive Editing for the MEDFORD Metadata Language} (\href{https://youtu.be/TFLdXxnaBlU}{Demo}) (\href{https://liam-strand.github.io/assets/docs/medford_poster.pdf}{Poster}) (\href{https://github.com/liam-strand/medford-language-server}{Code Repository})} \\
+    \textbf{Fowler Family Summer Scholar and Project Lead, Tufts University Computer Science} & \hfill Summer 2022 \\
+    \multicolumn{2}{@{}X@{}}{\begin{mylist}
+        \item Led multi-institutional team to deliver new features to the MEDFORD Language.
+        \item Features include: dynamic syntax validation, contextual color highlighting, and intelligent auto-completion. 
+        \item Utilized beta tester feedback and automated regression testing.
+        \item Implemented using client/server model, with a well-documented API to easily support new language features and editors. 
+        \item Manuscript Accepted: \textit{Context-Sensitive Editing for the MEDFORD Metadata Language} (\href{https://youtu.be/TFLdXxnaBlU}{Demo}) (\href{https://liam-strand.github.io/assets/docs/medford_poster.pdf}{Poster}) (\href{https://github.com/liam-strand/medford-language-server}{Code Repository})
+    \end{mylist}} \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Teaching Assistant (C, C++), Tufts University Computer Science} & \hfill Fall 2021 - Present \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Design and teach labs. Teach debugging strategies and tools (gdb, valgrind). Lead review sessions. Collaborate with fellow TAs and faculty to develop course infrastructure, assessments, and assignments for machine structure and assembly programming courses.} \\
+    \multicolumn{2}{@{}X@{}}{\begin{mylist} 
+        \item Design and teach labs for machine structure and assembly language courses. 
+        \item Teach debugging strategies and tools (gdb, valgrind). 
+        \item Design and lead review sessions. 
+        \item Collaborate with fellow TAs and faculty to develop course infrastructure, assessments, and assignments. 
+    \end{mylist}} \\
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Data Collection/Analysis, Madaket Marine} & \hfill Summer/Winter 2018 - 2021 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Designed and implemented Yamaha outboard engine data collection methodology. Gathered, analyzed, synthesized data for 18 engine models. Created accessible diagnostic charts. Recovered and transferred GPS data. Created user guide to allow replication of work.}
+    \multicolumn{2}{@{}X@{}}{\begin{mylist}
+        \item Designed and implemented Yamaha outboard engine data collection methodology.
+        \item Gathered, analyzed, synthesized data for 18 engine models. Created accessible diagnostic charts. 
+        \item Set up Point-Of-Sale system backup network allowing business to operate when primary internet service fails.
+        \item Recovered and transferred GPS data. Created user guide to allow replication of work.
+    \end{mylist}}
 \end{tabularx}
 
 % \begin{minipage}[t]{\linewidth}
@@ -147,31 +179,54 @@
 % PROJECTS
 %-------------------------------------------------------------------------------
 
-\section{Personal Projects}
+\section{Projects}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Rust Boggle Solver: \href{https://github.com/liam-strand/ruggle}{Ruggle}} & \hfill 2023 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Designed and built a highly optimized boggle solver in Rust utilizing a serializable prefix tree (trie) data structure to encode a lexicon, a pruning graph-traversal algorithm, and a custom visualization system to display words as they appear on the board.}  \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{\begin{mylist}
+        \item Designed and built a highly optimized boggle solver in Rust.
+        \item Utilized a serializable prefix tree (trie) data structure to encode a lexicon.
+        \item Designed a pruning graph-traversal algorithm.
+        \item Implemented a custom visualization system to display words on the board.
+    \end{mylist}}  \\[3.75pt]
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Assembly Emulator:} \href{https://github.com/liam-strand/comp-40-VM-Profiling}{\textbf{VM Profiling}} & \hfill 2022 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Built a simulated architecture emulator in C, and vastly improved performance using modern profiling techniques. (\href{https://youtu.be/OnzkSmFvxiM}{Demo})} \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{\begin{mylist}
+        \item Built a simulated architecture emulator in C
+        \item Vastly improved performance using modern profiling techniques. (\href{https://youtu.be/OnzkSmFvxiM}{Demo})
+    \end{mylist}} \\[3.75pt]
 \end{tabularx}
+
+\pagebreak
+\section{Projects cont.}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Concurrent Simulations:} \href{https://github.com/liam-strand/cs-21-final-project}{\textbf{on-the-road-again}} and \href{https://github.com/liam-strand/cs121-p5\#metrosim2}{\textbf{MetroSim2}} & \hfill 2022 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Developed traffic simulation using CSP in Erlang with Python visualization, communicating over serialized I/O. Developed a fully concurrent subway simulation in Java using communicating threads to represent trains, passengers, and stations. (\href{https://youtu.be/_JQW8edL14A}{Demo})}  \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{\begin{mylist}
+        \item Developed traffic simulation using CSP in Erlang with Python visualization, communicating over serialized I/O. (\href{https://youtu.be/_JQW8edL14A}{Demo})
+        \item Developed fully concurrent subway simulation in Java using communicating threads for trains, passengers, and stations. 
+    \end{mylist}}  \\[3.75pt]
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \href{https://github.com/liam-strand/cs121-p3\#testing-in-java}{\textbf{Java Testing Framework}} & \hfill 2022 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Designed testing infrastructure: unit testing library, test generation framework, fluent assertion domain-specific language, test runner.}  \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{\begin{mylist}
+        \item Custom unit testing library
+        \item Algorithmic test generation framework
+        \item Highly ergonomic fluent assertion domain-specific language
+        \item User-friendly test runner
+    \end{mylist}}  \\[3.75pt]
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{Python CLI Concurrent Queue Manager:} \href{https://github.com/liam-strand/HalliganHelper2}{\textbf{HalliganHelper2}} & \hfill 2021 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Developed CLI to manage FIFO queue of students requesting TA assistance in Python. Used shared files and file locks to prevent change conflicts. CLI automatically invokes relevant commands and imposes serialization. (\href{https://youtu.be/qPwZz3OVA7A}{Demo})} \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{\begin{mylist}
+        \item Developed CLI to manage FIFO queue of students requesting TA assistance in Python. 
+        \item Used shared files and file locks to prevent change conflicts. 
+        \item CLI automatically invokes relevant commands and imposes serialization. (\href{https://youtu.be/qPwZz3OVA7A}{Demo})
+    \end{mylist}} \\[3.75pt]
 \end{tabularx}
 
 % \begin{tabularx}{\linewidth}{ @{}l r@{} }
@@ -181,14 +236,13 @@
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
     \textbf{iOS Data Logging App:} \href{https://github.com/bstrand42/Log-Your-Catch}{\textbf{Log Your Catch}} & \hfill 2020 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{Built iOS app to capture and record data to support fishery management using Apple Location Services and Google Firebase database services. Completed architecture design, UI design, system integration, authentication, and beta testing.} \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{\begin{mylist} 
+        \item Built iOS app to capture and record data to support fishery management.
+        \item Used Apple Location Services and Google Firebase database services. 
+        \item Completed architecture design, UI design, system integration, authentication, and beta testing.
+    \end{mylist}} \\[3.75pt]
 \end{tabularx}
 
-%-------------------------------------------------------------------------------
-%	SKILLS
-%-------------------------------------------------------------------------------
-\section{Skills}
-\normalsize{C, C++, Concurrent/Parallel Programming, Profiling, Performance Analysis, Tuning, Linux/Unix, Testing Methodologies, Python, Rust, Java, Docker, \texttt{git}, GitHub, GitLab, Jira, Agile Development, \texttt{gdb}, Erlang, Swift, \LaTeX}
 
 %-------------------------------------------------------------------------------
 %	EDUCATION
@@ -196,10 +250,35 @@
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
 2020 - Present & BS in Computer Science, Tufts University School of Engineering (ABET) \hfill \normalsize GPA: 3.96/4.00 \\
-    & \footnotesize{Data Structures/Algorithms, Machine Structure and Assembly Language, Software Engineering, Security, Concurrent Programming, Parallel Computing, Computational Theory, Programming Languages, Fall 23: Machine Learning} (Dean's List 6/6 semesters) \\[3.75pt]
-Summer/Fall 2020 & Swift 2, iOS development bootcamp, Udemy London App Brewery
-% Summer 2019 & Python Scripting, Rice University/Coursera	
+    & \footnotesize{Data Structures/Algorithms, Machine Structure and Assembly Language, Software Engineering, Security, Concurrent Programming, Parallel Computing, Computational Theory, Programming Languages. Fall 23: Machine Learning, Spatial Audio Software. \ \ \ \ \ \ \ \ \ \ \ \ Spring 24: Operating Systems, Quantom Computing, Artificial Intelligence.} (\textbf{Dean's List 6/6 semesters}) \\[3.75pt]
+Summer/Fall 2020 & Swift 2, iOS development bootcamp, Udemy London App Brewery \\[1.75pt]
+Summer 2019 & Python Scripting, Rice University/Coursera	
 \end{tabularx}
+
+%-------------------------------------------------------------------------------
+%	COMMUNITY
+%-------------------------------------------------------------------------------
+\section{Community}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+    JumboCode & Team-driven application development for local non-profit organizations. \\[2.75pt]
+    Student Interviewer & Helped assess candidates for tenure-track teaching faculty positions at Tufts University. \\[2.75pt]
+    Engineering Ambassador & Selected to advise incoming and first-year engineering students. \\[2.75pt]
+    Sustainable Nantucket & Migrated critical data from failing Windows 2007 server, verified data accuracy/accessibility. \\[2.75pt]
+    Robotics & Led skills training: soldering, metal fabrication, carpentry, robot design, fabrication, and electronics. Mentored new team members. Coached new leaders. Created legacy training program.
+\end{tabularx}
+
+%-------------------------------------------------------------------------------
+%	HOBBIES AND PASSIONS
+%-------------------------------------------------------------------------------
+\section{Hobbies and Passions}
+\begin{itemize}
+    \item Concert and Chamber Choirs (Bass): 2016 - Present
+    \item Jazz/Rock Ensembles (Keyboard): 2015 - Present
+    \item Short Play Festival Reader/Judge: 2020 - Present
+    \item Classical Piano: Certificate of Merit Awards (through Level 6)
+    \item MTAC Improvisation Festival (Piano)
+    \item The Requiem Project (Founder and Director)
+\end{itemize}
 
 %-------------------------------------------------------------------------------
 %	PUBLICATIONS
