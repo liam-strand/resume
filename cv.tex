@@ -31,7 +31,7 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.92]{geometry}
+\usepackage[scale=0.95]{geometry}
 
 %tabularx environment
 \usepackage{tabularx}
@@ -40,7 +40,7 @@
 \usepackage{enumitem}
 
 \newenvironment{mylist}[1][]
-    {\itemize[noitemsep, nolistsep]}
+    {\itemize[nosep, wide=0pt, leftmargin=*, after=\strut]}
     {\enditemize}
 
 % centered version of 'X' col. type
@@ -111,69 +111,57 @@
 % \section{Interests}
 % This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
 
-%-------------------------------------------------------------------------------
-%	SKILLS
-%-------------------------------------------------------------------------------
-\section{Skills}
-\normalsize{C, C++, Concurrent/Parallel Programming, Debugging, Hardware Bringup, Profiling, Performance Analysis, Tuning, Linux/Unix, Testing Methodologies, Python, Rust, Java, Docker, \texttt{git}, GitHub, GitLab, Jira, Agile Development, \texttt{gdb}, Erlang, Swift, \LaTeX}
+\section{Education}
+\begin{minipage}[t]{\linewidth}
+    \textbf{BS in Computer Science, Tufts University School of Engineering (ABET) GPA: 3.96/4.00} \hfill \normalsize 2020 - 2024 \\
+    \small Data Structures/Algorithms, Machine Structure and Assembly Language Programming, Software Engineering, Concurrent Programming, \qquad Parallel Computing, Computational Theory, Programming Languages, Cybersecurity. Fall 2023: Machine Learning, Spatial Audio Software. \qquad \qquad \qquad \qquad Spring 2024: Operating Systems, Quantum Computing, Artificial Intelligence. (\textbf{Dean's List 6/6 semesters})
+% Summer/Fall 2020 & Swift 2, iOS development bootcamp, Udemy London App Brewery
+% Summer 2019 & Python Scripting, Rice University/Coursera	
+\end{minipage}
 
 %-------------------------------------------------------------------------------
 % EXPERIENCE
 %-------------------------------------------------------------------------------
 
-\section{Experience}
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Embedded Software Engineering Intern, AeroVironment, Inc.} & \hfill Summer 2023 \\
-    \multicolumn{2}{@{}X@{}}{\begin{mylist}
+\section{Work Experience}
+\begin{minipage}[t]{\linewidth}
+    \textbf{AeroVironment, Inc. \textbar \ Embedded Software Engineering Intern \textbar \ Wilmington, MA} \hfill Summer 2023 
+    \begin{mylist}
         \item Demonstrated that costs of aerial robotics product can be dramatically reduced by transitioning to COTS hardware. 
-        \item Led hardware bringup and software integration effort
-        \item Created CI pipelines and containers for development using Docker and GitLab. 
-        \item Led porting of large C++ applications to new distributed hardware environment. 
-        \item Refactored network communication protocol to improve architecture and resiliency. 
-        \item Resolved complex Linux kernel driver compatibility issues.
-    \end{mylist}} \\
-\end{tabularx}
+        \item Led hardware bringup and software integration effort. Created development pipelines and containers using Docker and GitLab. 
+        \item Led porting of large, high-performance C++ applications to new distributed hardware environment. 
+        \item Refactored communication protocol to improve design and resiliency, and resolved complex Linux kernel driver incompatibilities.
+    \end{mylist}
+\end{minipage}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Fowler Family Summer Scholar and Project Lead, Tufts University Computer Science} & \hfill Summer 2022 \\
-    \multicolumn{2}{@{}X@{}}{\begin{mylist}
-        \item Led multi-institutional team to deliver new features to the MEDFORD Language.
-        \item Features include: dynamic syntax validation, contextual color highlighting, and intelligent auto-completion. 
-        \item Utilized beta tester feedback and automated regression testing.
-        \item Implemented using client/server model, with a well-documented API to easily support new language features and editors. 
-        \item Manuscript Accepted: \textit{Context-Sensitive Editing for the MEDFORD Metadata Language} (\href{https://youtu.be/TFLdXxnaBlU}{Demo}) (\href{https://liam-strand.github.io/assets/docs/medford_poster.pdf}{Poster}) (\href{https://github.com/liam-strand/medford-language-server}{Code Repository})
-    \end{mylist}} \\
-\end{tabularx}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Teaching Assistant (C, C++), Tufts University Computer Science} & \hfill Fall 2021 - Present \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{\begin{mylist} 
-        \item Design and teach labs for machine structure and assembly language courses. 
-        \item Teach debugging strategies and tools (gdb, valgrind). 
-        \item Design and lead review sessions. 
-        \item Collaborate with fellow TAs and faculty to develop course infrastructure, assessments, and assignments. 
-    \end{mylist}} \\
-\end{tabularx}
+\begin{minipage}[t]{\linewidth}
+    \textbf{Bioinformatics \& Computational Biology Group, Tufts University \textbar \ Summer Scholar \textbar \ Medford, MA} \hfill Summer 2022
+    \begin{mylist}
+        \item Led multi-institutional team. Delivered syntax validation, color highlighting, and auto-completion features.
+        \item Implemented client/server architecture in Python, with a well-documented API to support new language features and editors. 
+        \item Utilized beta tester feedback and automated regression testing frameworks.
+        \item Manuscript Accepted: \textit{Context-Sensitive Editing for the MEDFORD Metadata Language} (\href{https://youtu.be/TFLdXxnaBlU}{Demo}) (\href{https://github.com/liam-strand/medford-language-server}{Code Repository})
+    \end{mylist}
+\end{minipage}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Data Collection/Analysis, Madaket Marine} & \hfill Summer/Winter 2018 - 2021 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{\begin{mylist}
-        \item Designed and implemented Yamaha outboard engine data collection methodology.
-        \item Gathered, analyzed, synthesized data for 18 engine models. Created accessible diagnostic charts. 
-        \item Set up Point-Of-Sale system backup network allowing business to operate when primary internet service fails.
-        \item Recovered and transferred GPS data. Created user guide to allow replication of work.
-    \end{mylist}}
-\end{tabularx}
+\begin{minipage}[t]{\linewidth}
+    \textbf{Computer Science Department, Tufts University \textbar \ Teaching Assistant \textbar \ Medford, MA} \hfill Fall 2021 - Present
+    \begin{mylist} 
+        \item Design and lead labs and review sessions for C and C++ machine structure and assembly language courses. 
+        \item Teach debugging and performance analysis strategies using tools such as \texttt{gdb} and \texttt{valgrind}.
+        \item Collaborate with faculty to develop course infrastructure, assessments, and assignments.
+    \end{mylist}
+\end{minipage}
 
-% \begin{minipage}[t]{\linewidth}
-%     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-%         \item[--] Developing course infrastructure
-%         \item[--] Assisting in course planning and scheduling
-%         \item[--] Designing and teaching labs
-%         \item[--] Planning and running review sessions
-%         \item[--] Hosting one-on-one and group office hours 
-%     \end{itemize}
-% \end{minipage}
+\begin{minipage}[t]{\linewidth}
+    \textbf{Hither Creek Boatyard \textbar \ Data Collection/Analysis \textbar \ Madaket, MA} \hfill Summer/Winter 2018 - 2021
+    \begin{mylist}
+        \item Created and installed Point-Of-Sale system backup network allowing business to operate when primary internet service fails.
+        \item Designed Yamaha outboard engine data collection methodology. Gathered, analyzed, and synthesized data for 18 engine models.
+        \item Created accessible Yamaha outboard engine diagnostic charts. Recovered and transferred GPS chartplotter data. 
+    \end{mylist}
+\end{minipage}
 
 %-------------------------------------------------------------------------------
 % PROJECTS
@@ -181,78 +169,49 @@
 
 \section{Projects}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Rust Boggle Solver: \href{https://github.com/liam-strand/ruggle}{Ruggle}} & \hfill 2023 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{\begin{mylist}
-        \item Designed and built a highly optimized boggle solver in Rust.
-        \item Utilized a serializable prefix tree (trie) data structure to encode a lexicon.
-        \item Designed a pruning graph-traversal algorithm.
-        \item Implemented a custom visualization system to display words on the board.
-    \end{mylist}}  \\[3.75pt]
-\end{tabularx}
+\begin{minipage}[t]{\linewidth}
+    \textbf{Rust Boggle Solver: \href{https://github.com/liam-strand/ruggle}{Ruggle}} \hfill 2023 \\
+    Designed and built a highly optimized Boggle solver in Rust utilizing a serializable prefix tree (trie) data structure to encode a lexicon, a pruning graph-traversal algorithm, and a custom visualization system to display words as they appear on the board.
+\end{minipage}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Assembly Emulator:} \href{https://github.com/liam-strand/comp-40-VM-Profiling}{\textbf{VM Profiling}} & \hfill 2022 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{\begin{mylist}
-        \item Built a simulated architecture emulator in C
-        \item Vastly improved performance using modern profiling techniques. (\href{https://youtu.be/OnzkSmFvxiM}{Demo})
-    \end{mylist}} \\[3.75pt]
-\end{tabularx}
+\begin{minipage}[t]{\linewidth}
+    \textbf{Assembly Emulator:} \href{https://github.com/liam-strand/comp-40-VM-Profiling}{\textbf{VM Profiling}} \hfill 2022 \\
+    Built a simulated architecture emulator in C, and vastly improved performance using modern profiling techniques. (\href{https://youtu.be/OnzkSmFvxiM}{Demo})
+\end{minipage}
 
-\pagebreak
-\section{Projects cont.}
+\begin{minipage}[t]{\linewidth}
+    \textbf{Concurrent Simulations:} \href{https://github.com/liam-strand/cs121-p5\#metrosim2}{\textbf{MetroSim2}} and \href{https://github.com/liam-strand/cs-21-final-project}{\textbf{on-the-road-again}} \hfill 2022 \\
+    Developed fully concurrent subway simulation in Java using communicating threads to represent trains, passengers, and stations. Designed and built traffic simulation using CSP in Erlang with Python visualization, communicating over serialized I/O. (\href{https://youtu.be/_JQW8edL14A}{Demo}) 
+\end{minipage}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Concurrent Simulations:} \href{https://github.com/liam-strand/cs-21-final-project}{\textbf{on-the-road-again}} and \href{https://github.com/liam-strand/cs121-p5\#metrosim2}{\textbf{MetroSim2}} & \hfill 2022 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{\begin{mylist}
-        \item Developed traffic simulation using CSP in Erlang with Python visualization, communicating over serialized I/O. (\href{https://youtu.be/_JQW8edL14A}{Demo})
-        \item Developed fully concurrent subway simulation in Java using communicating threads for trains, passengers, and stations. 
-    \end{mylist}}  \\[3.75pt]
-\end{tabularx}
+\begin{minipage}[t]{\linewidth}
+    \href{https://github.com/liam-strand/cs121-p3\#testing-in-java}{\textbf{Java Testing Framework}} \hfill 2022 \\
+    Designed testing infrastructure: unit testing library, test generation framework, fluent assertion domain-specific language, test runner.
+\end{minipage}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \href{https://github.com/liam-strand/cs121-p3\#testing-in-java}{\textbf{Java Testing Framework}} & \hfill 2022 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{\begin{mylist}
-        \item Custom unit testing library
-        \item Algorithmic test generation framework
-        \item Highly ergonomic fluent assertion domain-specific language
-        \item User-friendly test runner
-    \end{mylist}}  \\[3.75pt]
-\end{tabularx}
+\begin{minipage}[t]{\linewidth}
+    \textbf{Python CLI Concurrent Queue Manager:} \href{https://github.com/liam-strand/HalliganHelper2}{\textbf{HalliganHelper2}} \hfill 2021 \\
+    Developed CLI to manage FIFO queue of students requesting TA assistance in Python. Used shared files and file locks to prevent change conflicts. CLI automatically invokes relevant commands and imposes serialization. (\href{https://youtu.be/qPwZz3OVA7A}{Demo})
+\end{minipage}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{Python CLI Concurrent Queue Manager:} \href{https://github.com/liam-strand/HalliganHelper2}{\textbf{HalliganHelper2}} & \hfill 2021 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{\begin{mylist}
-        \item Developed CLI to manage FIFO queue of students requesting TA assistance in Python. 
-        \item Used shared files and file locks to prevent change conflicts. 
-        \item CLI automatically invokes relevant commands and imposes serialization. (\href{https://youtu.be/qPwZz3OVA7A}{Demo})
-    \end{mylist}} \\[3.75pt]
-\end{tabularx}
+\begin{minipage}[t]{\linewidth}
+    \textbf{iOS Data Scraping App:} \href{https://github.com/liam-strand/IFR-Plate-Scrape}{\textbf{IFR Plate Scrape}} \hfill 2021 \\
+    Built airport mapping app in Python using HTTP requests to retrieve FAA data, and BeautifulSoup to extract and present relevant information to user. Ported to iOS using Swift, leveraging built-in URL management and SwiftSoup. (\href{https://youtu.be/bDe3dsVyUok}{Demo})
+\end{minipage}
 
-% \begin{tabularx}{\linewidth}{ @{}l r@{} }
-%     \textbf{iOS Data Scraping App:} \href{https://github.com/liam-strand/IFR-Plate-Scrape}{\textbf{IFR Plate Scrape}} & \hfill 2021 \\[3.75pt]
-%     \multicolumn{2}{@{}X@{}}{Built airport mapping app in Python using HTTP requests to retrieve FAA data, and BeautifulSoup to extract and present relevant information to user. Ported to iOS using Swift, leveraging built-in URL management and SwiftSoup. (\href{https://youtu.be/bDe3dsVyUok}{Demo})} \\[3.75pt]
-% \end{tabularx}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-    \textbf{iOS Data Logging App:} \href{https://github.com/bstrand42/Log-Your-Catch}{\textbf{Log Your Catch}} & \hfill 2020 \\[3.75pt]
-    \multicolumn{2}{@{}X@{}}{\begin{mylist} 
-        \item Built iOS app to capture and record data to support fishery management.
-        \item Used Apple Location Services and Google Firebase database services. 
-        \item Completed architecture design, UI design, system integration, authentication, and beta testing.
-    \end{mylist}} \\[3.75pt]
-\end{tabularx}
-
+\begin{minipage}[t]{\linewidth}
+    \textbf{iOS Data Logging App:} \href{https://github.com/bstrand42/Log-Your-Catch}{\textbf{Log Your Catch}} \hfill 2020 \\
+    Built iOS app to capture and record data to support fishery management using Apple Location Services and Google Firebase database services. Completed architecture design, UI design, system integration, authentication, and beta testing.
+\end{minipage}
 
 %-------------------------------------------------------------------------------
-%	EDUCATION
+%	SKILLS
 %-------------------------------------------------------------------------------
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2020 - Present & BS in Computer Science, Tufts University School of Engineering (ABET) \hfill \normalsize GPA: 3.96/4.00 \\
-    & \footnotesize{Data Structures/Algorithms, Machine Structure and Assembly Language, Software Engineering, Security, Concurrent Programming, Parallel Computing, Computational Theory, Programming Languages. Fall 23: Machine Learning, Spatial Audio Software. \ \ \ \ \ \ \ \ \ \ \ \ Spring 24: Operating Systems, Quantom Computing, Artificial Intelligence.} (\textbf{Dean's List 6/6 semesters}) \\[3.75pt]
-Summer/Fall 2020 & Swift 2, iOS development bootcamp, Udemy London App Brewery \\[1.75pt]
-Summer 2019 & Python Scripting, Rice University/Coursera	
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    \textbf{Languages:} & C, C++, Erlang, Java, \LaTeX, Markdown, Python, Rust, StandardML, Swift \\
+    \textbf{Tools/IDEs:} & Docker, \texttt{gdb}, \texttt{git}, GitHub, GitLab, GPU/CUDA, Jira, Linux/Unix, Neovim, \texttt{valgrind}, VSCode, Xcode \\
+    \textbf{Experienced In:} & Agile Development, Concurrent/Parallel Programming, Hardware Bringup, Profiling, Testing Methodologies
 \end{tabularx}
 
 %-------------------------------------------------------------------------------
@@ -270,7 +229,7 @@ Summer 2019 & Python Scripting, Rice University/Coursera
 %-------------------------------------------------------------------------------
 %	HOBBIES AND PASSIONS
 %-------------------------------------------------------------------------------
-\section{Hobbies and Passions}
+\section{Passions}
 \begin{itemize}
     \item Concert and Chamber Choirs (Bass): 2016 - Present
     \item Jazz/Rock Ensembles (Keyboard): 2015 - Present
