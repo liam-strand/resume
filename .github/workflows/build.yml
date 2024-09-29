@@ -13,9 +13,10 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
       - name: cv
-        uses: xu-cheng/texlive-action@v2
+        uses: xu-cheng/latex-action@v3
         with:
-          run: lualatex ${{env.DIR}}/${{env.FILE}}
+          root_file: ${{env.DIR}}/${{env.FILE}}
+          latexmk_use_lualatex: true
       - name: move
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
       - name: Upload pdf as artifact
