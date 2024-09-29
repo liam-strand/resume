@@ -13,9 +13,8 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
       - name: cv
-        uses: xu-cheng/texlive-action@v2
+        uses: xu-cheng/texlive-action@latest
         with:
-          scheme: small
           run: lualatex ${{env.DIR}}/${{env.FILE}}
       - name: move
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
