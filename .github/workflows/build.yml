@@ -13,7 +13,7 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
       - name: cv
-        uses: xu-cheng/texlive-action@latest
+        uses: xu-cheng/texlive-action@v2
         with:
           run: lualatex ${{env.DIR}}/${{env.FILE}}
       - name: move
