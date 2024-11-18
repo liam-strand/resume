@@ -63,7 +63,7 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\bfseries\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{10pt}{10pt}
+\titlespacing{\section}{0pt}{5pt}{5pt}
 
 %for publications
 \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
@@ -110,7 +110,7 @@
 \huge{Liam Strand} \\[5pt]
 \href{https://github.com/liam-strand}{\raisebox{-0.05\height}\faGithub\ github.com/liam-strand} \ $|$ \ 
 \href{mailto:strandliam@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ strandliam@gmail.com} \ $|$ \ 
-\href{tel:+14084381125}{\raisebox{-0.05\height}\faMobile \ (408) 438-1125} \\
+\href{tel:+14084381125}{\raisebox{-0.05\height}\faMobile \ (408) 438-1125}
 \end{tabularx}
 
 %-------------------------------------------------------------------------------
@@ -122,13 +122,21 @@
 
 \section{Education}
 \begin{minipage}[t]{\linewidth}
-    \textbf{Master of Science in Computer Science, Northwestern University } \hfill \textbf{2024 -- 2026} \\
-    \vspace{-0.25cm} \\
+    \textbf{Master of Science in Computer Science, Northwestern University } \hfill \textbf{2024 -- 2026}
+    \begin{mylist}
+        \item Coursework: Networks, Operating Systems, AI/ML, Cloud Computing, CUDA Programming, and Databases
+    \end{mylist}
+    \vspace{0.5em}
     \textbf{Bachelor of Science in Computer Science, Tufts University School of Engineering, GPA: 3.97/4.00} \hfill \textbf{2020 -- 2024}
-    \small \begin{mylist}
-        \item Graduated \textbf{summa cum laude} with focus in systems software, concurrent programming, and parallel computing
+    \begin{mylist}
+        \item Graduated \textbf{summa cum laude}; Dean's List all 8 semesters
+        \item Focused on: Systems Software, Concurrent Programming, Parallel Computing, and Modern Computer Architecture
+    \end{mylist}
+    \vspace{0.5em}
+    \textbf{Academic/Research Awards}
+    \begin{mylist}
         \item Computing Research Association \href{https://engineering.tufts.edu/cs/research/undergraduate-research/undergrad-research-award-nominees}{\textbf{Outstanding Undergraduate Researcher Award}}, Honorable Mention
-        \item \href{https://engineering.tufts.edu/cs/news-events/awards}{\textbf{David Krumme Award for Experimental Computer Science}} for substantial projects of practical worth and meritorious research
+        \item \href{https://engineering.tufts.edu/cs/news-events/awards}{\textbf{David Krumme Award for Experimental Computer Science}} for  meritorious research and projects of practical worth
         \item \href{https://alumniandfriends.tufts.edu/2024-senior-awardee-liam-strand-e24}{\textbf{TUAA Senior Award}} for outstanding leadership, significant academic achievement, and extraordinary service
     \end{mylist}
 % \small Data Structures/Algorithms, Machine Structure and Assembly Language Programming, Software Engineering, Concurrent Programming, Parallel Computing, Computational Theory, Programming Languages, Cybersecurity, Machine Learning, Operating Systems, Computer Engineering.
@@ -138,6 +146,16 @@
 \end{minipage}
 
 %-------------------------------------------------------------------------------
+%	SKILLS
+%-------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    \textbf{Languages:} & Assembly, C, C++, Erlang, Java, \LaTeX, Python, RISC-V, Rust, Swift, Unix/Shell Scripting, SystemVerilog \\
+    \textbf{Technologies:} & Docker, \texttt{gdb}, \texttt{git}, GitHub, GitLab, GPU/CUDA, Jira, Linux/Unix, TCP/IP, \texttt{valgrind}, VSCode, Xcode \\
+    \textbf{Methods:} & Agile, Concurrent/Parallel Programming, Hardware Bringup, Operating Systems, Profiling, Test Development
+\end{tabularx}
+
+%-------------------------------------------------------------------------------
 % EXPERIENCE
 %-------------------------------------------------------------------------------
 
@@ -145,7 +163,7 @@
 \begin{minipage}[t]{\linewidth}
     \textbf{Researcher \textbar \ Prescience Lab, Northwestern University \textbar \ Evanston, IL} \hfill \textbf{Oct 2024 -- Present} 
     \begin{mylist}
-        \item Reducing the overhead of floating point virtualization by $\approx$600x by implementing accelerated exception handling in hardware
+        \item Reducing floating point virtualization overhead by 600x by modifying hardware exception handling using Chisel and FIRRTL
     \end{mylist}
 \end{minipage}
 
@@ -197,7 +215,7 @@
 \section{Projects}
 
 \begin{minipage}[t]{\linewidth}
-    \textbf{RISC-V Processor} \hfill \textbf{2024}
+    \textbf{RISC-V Processor}
     \begin{mylist}
     \item Designed single-cycle RISC-V core in SystemVerilog, including control, datapath, and scaffolded memory subsystems
     \item Simulated and tested design for adherence to the RV32I specification using Verilator
@@ -205,7 +223,7 @@
 \end{minipage}
 
 \begin{minipage}[t]{\linewidth}
-    \textbf{Tactile Spatial Audio System: \href{https://sgilfeather.github.io/CyberGrape/cybergrape/index.html}{CyberGrape}} \hfill \textbf{2024}
+    \textbf{Tactile Spatial Audio System: \href{https://sgilfeather.github.io/CyberGrape/cybergrape/index.html}{CyberGrape}}
     \begin{mylist}
         \item Led development of audio mixing tool using Rust, Raspberry Pi microcontrollers, and directional Bluetooth antennae
         \item Created flexible build system tooling to manage seamless cross-compilation and foreign library binding generation
@@ -214,7 +232,7 @@
 \end{minipage}
 
 \begin{minipage}[t]{\linewidth}
-    \textbf{Rust Boggle Solver: \href{https://github.com/liam-strand/ruggle}{Ruggle}} \hfill \textbf{2023}
+    \textbf{Rust Boggle Solver: \href{https://github.com/liam-strand/ruggle}{Ruggle}}
     \begin{mylist}
         \item Designed and built a highly optimized Boggle solver in Rust with a custom TUI visualization system to display solutions
         \item Implemented a serializable prefix tree (trie) to encode a lexicon, and a pruning graph-traversal algorithm to identify words
@@ -222,7 +240,7 @@
 \end{minipage}
 
 \begin{minipage}[t]{\linewidth}
-    \textbf{Assembly Emulator:} \href{https://github.com/liam-strand/comp-40-VM-Profiling}{\textbf{VM Profiling}} \hfill \textbf{2022}
+    \textbf{Assembly Emulator:} \href{https://github.com/liam-strand/comp-40-VM-Profiling}{\textbf{VM Profiling}}
     \begin{mylist}
         \item Built a simulated architecture emulator in C, and vastly improved performance using modern profiling techniques. (\href{https://youtu.be/OnzkSmFvxiM}{Demo})
     \end{mylist}
@@ -257,20 +275,10 @@
 % \end{minipage}
 
 
-%-------------------------------------------------------------------------------
-%	SKILLS
-%-------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-    \textbf{Languages:} & Assembly, C, C++, Erlang, Java, \LaTeX, Python, RISC-V, Rust, Swift, Unix/Shell Scripting, SystemVerilog \\
-    \textbf{Tools/IDEs:} & Docker, \texttt{gdb}, \texttt{git}, GitHub, GitLab, GPU/CUDA, Jira, Linux/Unix, \texttt{valgrind}, VSCode, Xcode \\
-    \textbf{Experienced In:} & Agile, Concurrent/Parallel Programming, Hardware Bringup, Operating Systems, Profiling, Testing
-\end{tabularx}
 
 %-------------------------------------------------------------------------------
 %	AI Blurb
 %-------------------------------------------------------------------------------
-
 
 % \AddToShipoutPictureBG*{%
 %   \AtPageLowerLeft{
