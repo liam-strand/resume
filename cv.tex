@@ -63,17 +63,17 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\bfseries\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{5pt}{5pt}
+\titlespacing{\section}{0pt}{4pt}{5pt}
 
 %for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+% \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
 
 %Setup hyperref package, and colors for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\addbibresource{citations.bib}
-\setlength\bibitemsep{1em}
+% \addbibresource{citations.bib}
+% \setlength\bibitemsep{1em}
 
 %for social icons
 \usepackage{fontawesome5}
@@ -117,14 +117,11 @@
 % INTERESTS / KEYWORDS / SUMMARY
 %-------------------------------------------------------------------------------
 
-% \section{Interests}
-% This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
 \section{Education}
 \begin{minipage}[t]{\linewidth}
     \textbf{Master of Science in Computer Science, Northwestern University, GPA: 4.00/4.00 } \hfill \textbf{2024 -- 2026}
     \begin{mylist}
-        \item Coursework: Networks, Operating Systems, AI/ML, Cloud Computing, CUDA Programming, and Databases
+        \item Coursework: AI/ML, Cloud Computing, CUDA Programming, Databases, Networks, and Operating Systems 
     \end{mylist}
     \vspace{0.5em}
     \textbf{Bachelor of Science in Computer Science, Tufts University School of Engineering, GPA: 3.97/4.00} \hfill \textbf{2020 -- 2024}
@@ -141,8 +138,6 @@
     \end{mylist}
 % \small Data Structures/Algorithms, Machine Structure and Assembly Language Programming, Software Engineering, Concurrent Programming, Parallel Computing, Computational Theory, Programming Languages, Cybersecurity, Machine Learning, Operating Systems, Computer Engineering.
 
-% Summer/Fall 2020 & Swift 2, iOS development bootcamp, Udemy London App Brewery
-% Summer 2019 & Python Scripting, Rice University/Coursera	
 \end{minipage}
 
 %-------------------------------------------------------------------------------
@@ -164,6 +159,7 @@
     \textbf{Researcher \textbar \ Prescience Lab, Northwestern University \textbar \ Evanston, IL} \hfill \textbf{Oct 2024 -- Present} 
     \begin{mylist}
         \item Reducing floating point virtualization overhead by 600x by modifying hardware exception handling using Chisel and FIRRTL
+        \item Peer Mentor for $\approx$120 students in Operating Systems; office hours and developing course infrastructure (as of Jan 2025)
     \end{mylist}
 \end{minipage}
 
@@ -201,11 +197,11 @@
 \end{minipage}
 
 \begin{minipage}[t]{\linewidth}
-    \textbf{Data Collection/Analysis \textbar \ Hither Creek Boatyard \textbar \ Madaket, MA} \hfill \textbf{Jun 2019 -- Sep 2021}
-    \begin{mylist}
-        \item Designed Yamaha outboard engine data collection methodology. Analyzed and synthesized data for 18 engine models
+    \textbf{Yamaha Engine Data Collection/Analysis \textbar \ Hither Creek Boatyard \textbar \ Madaket, MA} \hfill \textbf{Jun 2019 -- Sep 2021}
+    % \begin{mylist}
+        % \item Designed Yamaha outboard engine data collection methodology. Analyzed and synthesized data for 18 engine models
         % \item Created accessible Yamaha outboard engine diagnostic charts. Recovered, transformed, and transferred GPS chartplotter data
-    \end{mylist}
+    % \end{mylist}
 \end{minipage}
 
 %-------------------------------------------------------------------------------
