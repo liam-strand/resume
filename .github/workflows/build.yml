@@ -12,11 +12,10 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
+      - name: Setup tectonic
+        uses: wtfjoke/setup-tectonic@v3
       - name: LaTeX Build
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: ${{env.DIR}}/${{env.FILE}}.tex
-          latexmk_use_lualatex: true
+        run: tectonic -X compile ${{ env.DIR }}/${{ env.FILE }}.tex
       - name: Move
         run: mkdir -p github_artifacts && mv ${{ env.DIR }}/${{ env.FILE }}.pdf ./github_artifacts/
       - name: Upload pdf as artifact
