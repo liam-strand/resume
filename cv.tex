@@ -66,14 +66,14 @@
 \titlespacing{\section}{0pt}{4pt}{5pt}
 
 %for publications
-% \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=3]{biblatex}
 
 %Setup hyperref package, and colors for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-% \addbibresource{citations.bib}
-% \setlength\bibitemsep{1em}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
 
 %for social icons
 \usepackage{fontawesome5}
@@ -116,7 +116,7 @@
 \begin{minipage}[t]{\linewidth}
     \textbf{Master of Science in Computer Science, Northwestern University, GPA: 4.00/4.00 } \hfill \textbf{2024 -- 2026}
     \begin{mylist}
-        \item Coursework: AI/ML, Cloud Computing, CUDA, Databases, Distributed Systems, Networks, and Kernel Programming
+        \item Coursework: AI/ML in Robotics, Cloud Computing, CUDA, Distributed Systems, Networks, and Kernel Programming
     \end{mylist}
     \vspace{0.5em}
     \textbf{Bachelor of Science in Computer Science, Tufts University School of Engineering, GPA: 3.97/4.00} \hfill \textbf{2020 -- 2024}
@@ -139,7 +139,7 @@
 
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-    \textbf{Languages:} & Assembly, C, C++, Chisel, Erlang, Java, \LaTeX, Python, RISC-V, Rust, Swift, Unix/Shell Scripting \\
+    \textbf{Languages:} & Assembly, C, C++, Chisel, Erlang, Go, Java, \LaTeX, Python, RISC-V, Rust, Swift, Unix/Shell Scripting \\
     \textbf{Technologies:} & AWS, Docker, \texttt{gdb}, \texttt{git}, GitHub, GitLab, GPU/CUDA, Jira, Jupyter, Linux/Unix, PyTorch, TCP/IP, \texttt{valgrind} \\
     \textbf{Methods:} & Agile, Concurrent/Parallel Programming, Hardware Bringup, Operating Systems, Profiling, Test Development
 \end{tabularx}
@@ -150,10 +150,23 @@
 
 \section{Experience}
 \begin{minipage}[t]{\linewidth}
+    \textbf{Distributed Systems Engineering Intern \textbar \ Bosch Robotics \textbar \ Sunnyvale, CA} \hfill \textbf{Summer 2025} 
+    \begin{mylist}
+        \item Transformed \href{https://github.com/BerkeleyAutomation/FogROS2}{FogROS} into FogX, a production fog robotics platform for swarms and cloud compute offloading
+        \item Rearchitected app with pluggable protocols, observability, and CI/CD stacks to scale fleets and resolve security vulnerabilities
+        \item Integrated \href{https://datatracker.ietf.org/doc/draft-johansson-ccwg-rfc8298bis-screamv2/}{SCReAM} congestion control to optimize network utilization and reduce cloud offload latency
+        \item Delivered AI-ready interfaces and regression suites enabling autonomous agents to propose and validate changes
+        \item Implemented identifier-based addressing and ROS2 and TCP adapters to expose topics across networks without app changes 
+    \end{mylist}
+\end{minipage}
+
+\begin{minipage}[t]{\linewidth}
     \textbf{Researcher \textbar \ Prescience Lab, Northwestern University \textbar \ Evanston, IL} \hfill \textbf{Oct 2024 -- Present} 
     \begin{mylist}
-        \item Reducing floating point virtualization overhead by 600x by modifying hardware exception handling using Chisel and FIRRTL
-        \item Peer Mentor for $\approx$100 Operating Systems students; office hours and developing course infrastructure (as of Jan 2025)
+        \item Architected complete synthesis pipeline to translate high-level parallel programs (NESL) into custom hardware accelerators
+        \item Reduced floating-point virtualization overhead by 600\(\times\) via redesigned Linux exception handling with Chisel
+        \item Implemented cross-stack changes to hardware, firmware, bootloader, Linux kernel, and C runtime for correctness and performance
+        \item Peer Mentor for $\approx$100 Operating Systems students; taught batch and real-time scheduling policies and driver development
     \end{mylist}
 \end{minipage}
 
@@ -161,10 +174,10 @@
     \textbf{Software Engineering Intern \textbar \ AeroVironment, Inc. \textbar \ Wilmington, MA} \hfill \textbf{Summer 2023} 
     \begin{mylist}
         \item Demonstrated cost of an aerial robotics platform can be dramatically reduced ($\approx$30\%) by transitioning to COTS hardware
-        \item Ported large ($>$100k LOC), high-performance C++ applications to new distributed hardware environment
+        \item Ported large ($>$100k LOC), high-performance C++ applications to new distributed hardware environment using \texttt{systemd}
         \item Led hardware bringup and software integration effort. Created containerized automated development pipelines
         \item Refactored host/device communication protocol to modernize design and improve resiliency
-        \item Debugged complex Linux kernel driver compatibility issues; collaborated with hardware vendor engineers
+        \item Debugged complex radio kernel driver compatibility issues; collaborated with hardware vendor engineers to resolve
     \end{mylist}
 \end{minipage}
 
@@ -189,9 +202,21 @@
     \end{mylist}
 \end{minipage}
 
-\begin{minipage}[t]{\linewidth}
-    \textbf{Yamaha Engine Data Collection/Analysis \textbar \ Hither Creek Boatyard \textbar \ Madaket, MA} \hfill \textbf{Jun 2019 -- Sep 2021}
-\end{minipage}
+% \begin{minipage}[t]{\linewidth}
+%     \textbf{Yamaha Engine Data Collection/Analysis \textbar \ Hither Creek Boatyard \textbar \ Madaket, MA} \hfill \textbf{Jun 2019 -- Sep 2021}
+% \end{minipage}
+
+%-------------------------------------------------------------------------------
+% PUBLICATIONS
+%-------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{refsection}[citations.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
+
 
 %-------------------------------------------------------------------------------
 % PROJECTS
@@ -227,7 +252,7 @@
 \begin{minipage}[t]{\linewidth}
     \textbf{Assembly Emulator: \href{https://github.com/liam-strand/comp-40-VM-Profiling}{VM Profiling}}
     \begin{mylist}
-        \item Built a simulated architecture emulator in C, and vastly improved performance using modern profiling techniques. (\href{https://youtu.be/OnzkSmFvxiM}{Demo})
+        \item Built a simulated architecture emulator in C, and vastly improved performance using modern profiling techniques (\href{https://youtu.be/OnzkSmFvxiM}{Demo})
     \end{mylist}
 \end{minipage}
 
